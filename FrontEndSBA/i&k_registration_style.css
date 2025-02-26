@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'FoxAndBower';
+    src: url(FoxAndBower.otf);
+}
+
+:root{
+    --base-color: #f5f2e9;
+    --secondary-color: #a19d84;
+    --action-color: #55522f;
+}
+
+body{
+    background-color: var(--secondary-color);
+
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.container{
+    padding: 40px;
+    padding-bottom: 40px;
+    width: 300px;
+    background-color: var(--base-color);
+    border-radius: 6px;
+    border: none;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+.container h2{
+    font-family: "FoxAndBower";
+    font-size: 1.25em;
+    text-align: center;
+    color:#b2832f;
+    padding-top: 20px;    
+}
+.container h6 a{
+    color: rgb(58, 56, 56);
+    text-decoration: none;
+}
+.container h6 a:hover{
+    color: #b2832f;
+    cursor: pointer;
+
+}
+
+.input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #82827e;
+}
+
+.submit-button {
+    width: 150px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--action-color);
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    
+}
+.submit-button:hover{
+    background-color: black;
+}
+.logo img{
+    width:300px;
+    height: auto;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="i&klogin_style.css">
+    <script>
+        function handleSubmit(event) {
+    event.preventDefault();
+    console.log("Form submitted");
+    window.location.href = "i&k_main.html";
+}
+    </script>
+</head>
+<body>
+    <main>
+        <form onsubmit="handleSubmit(event)" class="container">
+            <div class="logo">
+                <img src="images/inkandkeys_logo.png" alt="logo">
+            </div>
+            <h2>Login:</h2>
+            <input type="email" class="input" name="username" placeholder="Username:" required>
+            <input 
+                type="password" 
+                class="input" 
+                name="password" 
+                placeholder="Password:" 
+                required 
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" 
+                title="Password must contain at least 8 characters, one uppercase letter, one lowercase letter, one number, and one special character." >
+            <button type="submit" class="submit-button">Submit</button>
+            <h6><a href="i&k_registration.html">Not a member? Register here.</a></h6>
+        </form>
+    </main>
+    <footer></footer>
+    
+</body>
+</html>

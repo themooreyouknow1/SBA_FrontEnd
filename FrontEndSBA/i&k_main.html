@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ink & Keys Classics</title>
+    
+    <!-- //extrenal styling -->
+    <link rel="stylesheet" href="i&k_style.css">
+    
+    <!-- //webfont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- //internal styling -->
+    <style>
+        footer{background-color: #a19d84;}
+    </style>
+
+</head>
+<body>
+    <main class="container">
+        
+        <header class="navibar">
+            <img id="mainlogo" src="images/inkandkeys_logo.png" alt="mainlogo">
+            <ul class="links">
+                <li><a href="">home</a></li>
+                <li><a href="">about</a></li>
+                <li><a target="_blank" href="https://www.gutenberg.org">resources</a></li>
+            </ul>
+            <!-- dropdown -->
+            <div class="login-icon">
+                <img id="profile" src="images/profile_icon.png" alt="profile" class="dropbtn">
+                <div class="dropdown-content">
+                    <a href="">Profile</a>
+                    <a href="i&k_registration.html">Register</a>
+                    <a href="i&k_login.html">Log out</a>
+                </div>
+                
+            </div>
+        </header>
+
+        <article>
+            <div class="headline-container">
+                <!-- //inline styling -->
+                <h1 style="color:#55522f" id="main-headline">Welcome to Ink & Keys!</h1>
+                <h3 style="color:#f5f2e9" id="second-headline">A library for literary classics</h3>
+                <p style="color:#f5f2e9"> Click on a book below to read it in your browser, otherwise use the button to download the epub</p>
+            </div>
+
+            <div class="book-list"></div>
+
+        </article>
+        <footer>
+            <img id="typewriter-single" src="images/typewriter_single.png">
+            <table class="table">
+
+                <tr>
+                    <th class="left">Created By:</th>
+                    <th class="right">Jacob Moore</th>
+                </tr>
+                <tr>
+                    <th class="left">School Name:</th>
+                    <th class="right">Per Scholas</th>
+                </tr>
+                <tr>
+                    <th class="left">Assignment:</th>
+                    <th class="right">Front End SBA</th>
+                </tr>
+            </table>
+        </footer>
+
+
+
+    </main>
+    <script src="i&k_script.js"></script>
+</body>
+</html>
